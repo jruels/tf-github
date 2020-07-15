@@ -52,7 +52,7 @@ resource "aws_instance" "aws-k8s-master" {
   count                  = "${var.aws_master_count}"
   root_block_device {
     volume_type           = "gp2"
-    volume_size           = 20
+    volume_size           = 10
     delete_on_termination = true
   }
   tags {
